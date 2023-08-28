@@ -117,3 +117,16 @@ db.Student.updateOne({studentId:1},{ $set: {age:20},$currentDate:{lastUpdated:tr
 }
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/c09fc7f1-ce66-4272-9be0-f86dac3c29b1)
 
+**Data Deletion:Delete a student record using their Student ID.**
+
+  
+db.Student.deleteOne({studentId:5})
+
+
+**result:**
+
+
+{
+  acknowledged: true,
+  deletedCount: 1
+}
