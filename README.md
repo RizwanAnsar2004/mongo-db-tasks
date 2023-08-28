@@ -53,6 +53,15 @@ studentId:1,firstName:"rizwan",lastName:"ansar",age:18,subjects:["FOP","OOP","DS
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/89e24672-10ee-4759-b9b2-c039b3bd75ad)
 
 
-**TO RETRIEVE DATA OF ALL STUDENTS:**
+**TASK 2: TO RETRIEVE DATA OF ALL STUDENTS:**
 
 db.Student.find({})
+
+
+**result:**  
+
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/756a6b5c-e4c7-424b-9c48-fdf9992ec210)
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/6e4b0842-09d2-4330-9636-275f745c34fe)
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/b4339d97-c05d-4db1-bd94-7fe8241c4316)
+
+
