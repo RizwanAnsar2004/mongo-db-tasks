@@ -92,3 +92,12 @@ db.Student.find({ subjects: { $elemMatch: { $eq: "OOP" } } })
 
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/2277ee0d-e8c1-4165-8b25-852e06a3d6d9)
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/9e793a4f-b9e6-4e9c-a718-2fe1490a236a)
+
+**Retrieve students who live in a specific city.**
+
+db.Student.find({"address.city":"karachi"})
+
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/169cf84b-7c33-4ed0-99a3-6b5ccdad7e70)
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/b80ca72b-e706-4db4-b5f1-2443326c142b)
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/e131b209-8034-4d1f-8b0a-31dd77e9defc)
+
