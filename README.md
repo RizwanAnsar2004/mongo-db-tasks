@@ -131,6 +131,7 @@ db.Student.deleteOne({studentId:5})
   deletedCount: 1
 }
 
+**Create appropriate indexes to optimize the queries you've written in step 3**.
 
 db.Student.createIndex({studentId:1},{unique:true})
 db.Student.createIndex({age:1})
@@ -145,3 +146,12 @@ subjects_1
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/424aa144-ea11-453c-a978-4e6169a8724c)
 
 
+**Write an aggregation query to find the average age of all students.**
+
+db.Student.aggregate({$group:{_id:null,averageAge:{$avg:"$age"}}})
+
+**result:**
+{
+  _id: null,
+  averageAge: 19
+}
