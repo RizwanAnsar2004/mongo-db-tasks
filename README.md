@@ -65,3 +65,22 @@ db.Student.find({})
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/b4339d97-c05d-4db1-bd94-7fe8241c4316)
 
 
+TO RETRIVE A STUDENT FROM ITS ID:
+
+db.Student.find({studentId:1})
+
+
+**result**
+
+
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/e9494421-7ac7-4085-aca5-256085599cea)
+
+
+**Retrieve students whose age is greater than a certain value (e.g., 20)**.
+
+
+db.Student.find({age:{$lt:19}})
+
+**result:**
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/42a08542-2847-4090-89fe-7babfd8b358c)
+
