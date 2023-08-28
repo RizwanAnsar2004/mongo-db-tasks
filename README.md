@@ -130,3 +130,18 @@ db.Student.deleteOne({studentId:5})
   acknowledged: true,
   deletedCount: 1
 }
+
+
+db.Student.createIndex({studentId:1},{unique:true})
+db.Student.createIndex({age:1})
+db.Student.createIndex({subjects:1})
+
+
+**result:**
+
+studentId_1
+age_1
+subjects_1
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/424aa144-ea11-453c-a978-4e6169a8724c)
+
+
