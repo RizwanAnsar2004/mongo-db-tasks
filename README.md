@@ -3,6 +3,7 @@
 
 
 **TO CREATE COLLECTION:**
+
 use Rizwan
 db.createCollection("Rizwan")
 
