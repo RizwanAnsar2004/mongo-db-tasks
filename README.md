@@ -101,3 +101,19 @@ db.Student.find({"address.city":"karachi"})
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/b80ca72b-e706-4db4-b5f1-2443326c142b)
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/e131b209-8034-4d1f-8b0a-31dd77e9defc)
 
+
+**Data Update:Update the age of a specific student**.
+
+db.Student.updateOne({studentId:1},{ $set: {age:20},$currentDate:{lastUpdated:true}})
+
+**result:**
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/c09fc7f1-ce66-4272-9be0-f86dac3c29b1)
+
