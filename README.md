@@ -7,19 +7,37 @@
 use Rizwan
 db.createCollection("Rizwan")
 
+
 **TO CREATE RECORD OF FIVE STUDENTS:**
 
+
 db.Student.insertMany(
+
+
 [
 {
 studentId:1,firstName:"rizwan",lastName:"ansar",age:18,subjects:["FOP","OOP","DSA","DBMS"],address:{street:"dalmia",city:"karachi",zipCode:75260,state:"pakistan"}},
+
+
 {studentId:2,firstName:"sarwan",lastName:"tanweer",age:19,subjects:["FOP","OOP"],address:{street:"highway",city:"karachi",zipCode:75360,state:"pakistan"}},
+
+
 {studentId:3,firstName:"ahsan",lastName:"qadri",age:19,subjects:["FOP","OOP","DBMS"],address:{street:"cant",city:"karachi",zipCode:75460,state:"pakistan"}},
+
+
 {studentId:4,firstName:"buland",lastName:"bakht",age:18,subjects:["FOP"],address:{street:"jouhar",city:"karachi",zipCode:75560,state:"pakistan"}},
+
+
 {studentId:5,firstName:"izaan",lastName:"aktar",age:20,subjects:["DSA","DBMS"],address:{street:"shah faisal",city:"karachi",zipCode:75660,state:"pakistan"}
+
+
 }
 ])
+
+
 **result:**
+
+
 {
   acknowledged: true,
   insertedIds: {
