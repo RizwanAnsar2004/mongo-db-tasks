@@ -30,4 +30,11 @@ studentId:1,firstName:"rizwan",lastName:"ansar",age:18,subjects:["FOP","OOP","DS
     '4': ObjectId("64ed0cc50d30dbd4dc79f95e")
   }
 }
+
+
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/89e24672-10ee-4759-b9b2-c039b3bd75ad)
+
+
+**TO RETRIEVE DATA OF ALL STUDENTS:**
+
+db.Student.find({})
