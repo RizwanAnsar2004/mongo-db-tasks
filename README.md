@@ -84,3 +84,11 @@ db.Student.find({age:{$lt:19}})
 **result:**
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/42a08542-2847-4090-89fe-7babfd8b358c)
 
+
+**Retrieve students who are enrolled in a specific subject (use an array query operator)**.
+
+
+db.Student.find({ subjects: { $elemMatch: { $eq: "OOP" } } })
+
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/2277ee0d-e8c1-4165-8b25-852e06a3d6d9)
+![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/9e793a4f-b9e6-4e9c-a718-2fe1490a236a)
