@@ -2,13 +2,13 @@
 
 
 
-**TO CREATE COLLECTION:**
+##**TO CREATE COLLECTION:**
 
 use Rizwan
 db.createCollection("Rizwan")
 
 
-**TO CREATE RECORD OF FIVE STUDENTS:**
+##**TO CREATE RECORD OF FIVE STUDENTS:**
 
 
 db.Student.insertMany(
@@ -53,7 +53,7 @@ studentId:1,firstName:"rizwan",lastName:"ansar",age:18,subjects:["FOP","OOP","DS
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/89e24672-10ee-4759-b9b2-c039b3bd75ad)
 
 
-**TASK 2: TO RETRIEVE DATA OF ALL STUDENTS:**
+##**TASK 2: TO RETRIEVE DATA OF ALL STUDENTS:**
 
 db.Student.find({})
 
@@ -76,7 +76,7 @@ db.Student.find({studentId:1})
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/e9494421-7ac7-4085-aca5-256085599cea)
 
 
-**Retrieve students whose age is greater than a certain value (e.g., 20)**.
+##**Retrieve students whose age is greater than a certain value (e.g., 20)**.
 
 
 db.Student.find({age:{$lt:19}})
@@ -85,7 +85,7 @@ db.Student.find({age:{$lt:19}})
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/42a08542-2847-4090-89fe-7babfd8b358c)
 
 
-**Retrieve students who are enrolled in a specific subject (use an array query operator)**.
+##**Retrieve students who are enrolled in a specific subject (use an array query operator)**.
 
 
 db.Student.find({ subjects: { $elemMatch: { $eq: "OOP" } } })
@@ -93,7 +93,7 @@ db.Student.find({ subjects: { $elemMatch: { $eq: "OOP" } } })
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/2277ee0d-e8c1-4165-8b25-852e06a3d6d9)
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/9e793a4f-b9e6-4e9c-a718-2fe1490a236a)
 
-**Retrieve students who live in a specific city.**
+##**Retrieve students who live in a specific city.**
 
 db.Student.find({"address.city":"karachi"})
 
@@ -102,7 +102,7 @@ db.Student.find({"address.city":"karachi"})
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/e131b209-8034-4d1f-8b0a-31dd77e9defc)
 
 
-**Data Update:Update the age of a specific student**.
+##**Data Update:Update the age of a specific student**.
 
 db.Student.updateOne({studentId:1},{ $set: {age:20},$currentDate:{lastUpdated:true}})
 
@@ -117,7 +117,7 @@ db.Student.updateOne({studentId:1},{ $set: {age:20},$currentDate:{lastUpdated:tr
 }
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/c09fc7f1-ce66-4272-9be0-f86dac3c29b1)
 
-**Data Deletion:Delete a student record using their Student ID.**
+##**Data Deletion:Delete a student record using their Student ID.**
 
   
 db.Student.deleteOne({studentId:5})
@@ -131,7 +131,7 @@ db.Student.deleteOne({studentId:5})
   deletedCount: 1
 }
 
-**Create appropriate indexes to optimize the queries you've written in step 3**.
+##**Create appropriate indexes to optimize the queries you've written in step 3**.
 
 db.Student.createIndex({studentId:1},{unique:true})
 db.Student.createIndex({age:1})
@@ -146,7 +146,7 @@ subjects_1
 ![image](https://github.com/RizwanAnsar2004/mongo-db-tasks/assets/131580981/424aa144-ea11-453c-a978-4e6169a8724c)
 
 
-**Write an aggregation query to find the average age of all students.**
+##**Write an aggregation query to find the average age of all students.**
 
 db.Student.aggregate({$group:{_id:null,averageAge:{$avg:"$age"}}})
 
